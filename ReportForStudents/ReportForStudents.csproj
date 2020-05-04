@@ -1,0 +1,58 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ReportForStudents
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //This is a simple program
+            Console.WriteLine("The Tech Academy");
+            Console.WriteLine("Student Daily Report");
+            Console.ReadLine();
+            Console.WriteLine("What Course are you on?");
+            Console.ReadLine();
+            Console.WriteLine("What Page are you on?");
+            var pageNum = Console.ReadLine();
+
+            int minPage = 1;
+            int maxPage = 500;
+            int currentPage = int.Parse(pageNum);
+            int minRange = Math.Max(minPage, currentPage - 2);
+            int maxRange = Math.Min(maxPage, currentPage + 2);
+            
+            Console.WriteLine("Do you need help with anything? Please answer 'true' or 'false'.");
+            {
+                bool noHelp= false;
+                bool Help = true;
+                if (noHelp == false)
+                {
+                    Console.WriteLine("");
+                }
+                else if (Help == true)
+                {
+                    Console.WriteLine("");
+                }
+                Console.ReadLine();
+
+                Console.WriteLine("Were there any positive experiences you'd like to share? Please give specifics.");
+                Console.ReadLine();
+
+                Console.WriteLine("Is there any other feedback you'd like to provide? Please be specific.");
+                Console.ReadLine();
+
+                Console.WriteLine("How many hours did you study?");
+                Console.ReadLine();
+
+                Console.WriteLine("Thank you for your answers. An instructor will respond to this shortly. Have a great day!");
+                Console.ReadLine();
+            }
+        }
+    }
+}
+
