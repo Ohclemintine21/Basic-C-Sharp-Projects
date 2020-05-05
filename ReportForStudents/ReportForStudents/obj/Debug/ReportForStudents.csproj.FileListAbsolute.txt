@@ -1,0 +1,7 @@
+C:\Users\ohcle\source\repos\ReportForStudents\ReportForStudents\bin\Debug\ReportForStudents.exe.config
+C:\Users\ohcle\source\repos\ReportForStudents\ReportForStudents\bin\Debug\ReportForStudents.exe
+C:\Users\ohcle\source\repos\ReportForStudents\ReportForStudents\bin\Debug\ReportForStudents.pdb
+C:\Users\ohcle\source\repos\ReportForStudents\ReportForStudents\obj\Debug\ReportForStudents.csprojAssemblyReference.cache
+C:\Users\ohcle\source\repos\ReportForStudents\ReportForStudents\obj\Debug\ReportForStudents.csproj.CoreCompileInputs.cache
+C:\Users\ohcle\source\repos\ReportForStudents\ReportForStudents\obj\Debug\ReportForStudents.exe
+C:\Users\ohcle\source\repos\ReportForStudents\ReportForStudents\obj\Debug\ReportForStudents.pdb
