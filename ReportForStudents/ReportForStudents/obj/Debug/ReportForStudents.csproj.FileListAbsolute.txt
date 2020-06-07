@@ -5,3 +5,7 @@ C:\Users\ohcle\source\repos\ReportForStudents\ReportForStudents\obj\Debug\Report
 C:\Users\ohcle\source\repos\ReportForStudents\ReportForStudents\obj\Debug\ReportForStudents.csproj.CoreCompileInputs.cache
 C:\Users\ohcle\source\repos\ReportForStudents\ReportForStudents\obj\Debug\ReportForStudents.exe
 C:\Users\ohcle\source\repos\ReportForStudents\ReportForStudents\obj\Debug\ReportForStudents.pdb
+C:\Users\ohcle\source\repos\Basic-C-Sharp-Projects\ReportForStudents\ReportForStudents\obj\Debug\ReportForStudents.csprojAssemblyReference.cache
+C:\Users\ohcle\source\repos\Basic-C-Sharp-Projects\ReportForStudents\ReportForStudents\obj\Debug\ReportForStudents.csproj.CoreCompileInputs.cache
+C:\Users\ohcle\source\repos\Basic-C-Sharp-Projects\ReportForStudents\ReportForStudents\obj\Debug\ReportForStudents.exe
+C:\Users\ohcle\source\repos\Basic-C-Sharp-Projects\ReportForStudents\ReportForStudents\obj\Debug\ReportForStudents.pdb
