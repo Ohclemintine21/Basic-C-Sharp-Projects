@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,55 +10,50 @@ namespace Bool_Assignment_1
     {
         static void Main(string[] args)
         {
-            string userInput1;
-            int intVal;
-            
             Console.WriteLine("What is your age?");
-            userInput1 = Console.ReadLine();
-            //converts to integer type
-            intVal = Convert.ToInt32(userInput1);
-            Console.WriteLine("{0}", intVal);
+            int Age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Age);
             Console.ReadLine();
 
-            // Determine DUI
-            Console.WriteLine("Have you ever had a DUI?");
 
-            bool yes = true;
-            bool no = false;
+            Console.WriteLine("How you ever had a DUI?");
+            string userDUI = Console.ReadLine();
 
-            if (no == false)
+            if (userDUI == "Yes") 
             {
-                Console.WriteLine("false");
+                string answer = "True";
+                Console.WriteLine(answer);
             }
-            else if (yes == true)
+            else if (userDUI == "No")
             {
-                Console.WriteLine("true");
+                string answer2 = "False";
+                Console.WriteLine(answer2);
             }
-            Console.ReadLine();
+            Console.ReadLine(); 
 
-            string userInput2;
             Console.WriteLine("How many speeding tickets do you have?");
-            userInput2 = Console.ReadLine();
-            Console.WriteLine("{0}", userInput2);
+            int numTickets = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(numTickets);
             Console.ReadLine();
 
-            string Qualify;
             Console.WriteLine("Qualified?");
-            Qualify = Console.ReadLine();
 
-            if (Qualify.Equals(yes))
+
+            string isQualified = Console.ReadLine();
+
+            if (Age >= 15)
             {
-                Console.WriteLine("True");
+                Console.WriteLine(isQualified);
             }
-            else if (Qualify.Equals(no))
+            else if (numTickets <= 1)
             {
-                Console.WriteLine("false");
+                Console.WriteLine(isQualified);
+            }
+            else if (userDUI = 0) 
+            {
+                Console.WriteLine(isQualified);
             }
             Console.ReadLine();
-
-           
-           
-
         }
     }
 }
