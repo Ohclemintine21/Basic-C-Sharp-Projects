@@ -12,28 +12,28 @@ namespace While_and_Do_Assignment_2
         {
             Console.WriteLine("Guess the animal?");
             string animal = Console.ReadLine();
-            bool GuessedRight = animal == whale;
+            bool GuessedRight = animal == "whale";
 
             do
             {
                 switch (animal)
                 {
-                    case bird:
+                    case "bird":
                         Console.WriteLine("You guessed bird. Try again.");
                         Console.WriteLine("Guess the animal?");
                         animal = Console.ReadLine();
                         break;
-                    case cat:
+                    case "cat":
                         Console.WriteLine("You guessed cat. Try again.");
                         Console.WriteLine("Guess the animal?");
                         animal = Console.ReadLine();
                         break;
-                    case dog:
+                    case "dog":
                         Console.WriteLine("You guessed dog. Try again.");
                         Console.WriteLine("Guess the animal?");
                         animal = Console.ReadLine();
                         break;
-                    case whale:
+                    case "whale":
                         Console.WriteLine("You guessed Whale. That is correct!");
                         GuessedRight = true;
                         break;
