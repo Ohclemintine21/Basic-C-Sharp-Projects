@@ -21,12 +21,12 @@ namespace Bool_Assignment_1
 
             if (userDUI == "Yes") 
             {
-                string answer = "True";
+                bool answer = true;
                 Console.WriteLine(answer);
             }
             else if (userDUI == "No")
             {
-                string answer2 = "False";
+                bool answer2 = false;
                 Console.WriteLine(answer2);
             }
             Console.ReadLine(); 
@@ -38,8 +38,8 @@ namespace Bool_Assignment_1
 
             Console.WriteLine("Qualified?");
 
-
-            string isQualified = Console.ReadLine();
+            bool isQualified = true;
+            bool isNotQualified = false;
 
             if (Age >= 15)
             {
@@ -49,10 +49,15 @@ namespace Bool_Assignment_1
             {
                 Console.WriteLine(isQualified);
             }
-            else if (userDUI = 0) 
+            else if (userDUI == "No") 
             {
                 Console.WriteLine(isQualified);
             }
+            else
+            {
+                Console.WriteLine(isNotQualified);
+            }
+
             Console.ReadLine();
         }
     }
