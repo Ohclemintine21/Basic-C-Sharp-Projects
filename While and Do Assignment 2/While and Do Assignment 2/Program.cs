@@ -8,7 +8,7 @@ namespace While_and_Do_Assignment_2
 {
     class Program
     {
-        static void Main(string[] args, string whale)
+        static void Main(string[] args)
         {
             Console.WriteLine("Guess the animal?");
             string animal = Console.ReadLine();
