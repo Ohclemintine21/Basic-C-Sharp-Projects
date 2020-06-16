@@ -22,6 +22,18 @@ namespace ArraysAndListsAssignment1
             Console.WriteLine(intList[f]);
             Console.ReadLine();
 
+            //Error message if else statement
+
+            if (f < intList.Count)
+            {
+                Console.WriteLine(intList);
+            }
+            else
+            {
+                Console.WriteLine("Error, character not in list");
+            }
+            Console.ReadLine();
+
             //User chooses an index from the array and then it displays the integer at that index on the screen
             Console.WriteLine("Choose a number!");
             var num = Convert.ToInt32(Console.ReadLine());
@@ -38,17 +50,15 @@ namespace ArraysAndListsAssignment1
 
             //Error message display if number does not exist
 
-            try
+            if (num < numArray.Length)
             {
-                int[] numArrays = { 6, 8, 35, 40, 50 };
-                Console.WriteLine(numArrays[10]);
+                Console.WriteLine(numArray);  
             }
-            catch (Exception e)
+            else
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine("Error, number not in list");
             }
 
-            Console.ReadLine();
 
             //Ask user to select an index of the list and then display the content at that index on the screen
             Console.WriteLine("Choose a Character.");
@@ -59,9 +69,17 @@ namespace ArraysAndListsAssignment1
             intList2.Add("Cinderella");
             intList2.Add("Bugs Bunny");
 
-       
-
             Console.WriteLine(intList2[c]);
+            Console.ReadLine();
+
+            if (c < intList2.Count)
+            {
+                Console.WriteLine(intList2);
+            }
+            else
+            {
+                Console.WriteLine("Error, character not in list");
+            }
             Console.ReadLine();
 
         }
