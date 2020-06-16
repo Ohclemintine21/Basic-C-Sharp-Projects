@@ -18,19 +18,19 @@ namespace Bool_Assignment_1
 
             //user input number of DUI's
             Console.WriteLine("How you ever had a DUI?");
-            var userDUI = Console.ReadLine();
+            string userDUI = Console.ReadLine();
 
-            if (userDUI == "Yes")
-            {
-                Console.WriteLine("True");
-            }
-            else if (userDUI != "No")
-            {
-                Console.WriteLine("False");
-            }
-            
-            Console.ReadLine(); 
+            string falseString = bool.FalseString;
+            string trueString = bool.TrueString;
 
+            if (falseString == "no")
+            {
+                Console.WriteLine("false");
+            }
+            else if (trueString == "yes")
+            {
+                Console.WriteLine("true");
+            }
 
             // user input number of speeding tickets
             Console.WriteLine("How many speeding tickets do you have?");
