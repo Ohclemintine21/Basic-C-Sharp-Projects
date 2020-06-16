@@ -26,7 +26,7 @@ namespace ArraysAndListsAssignment1
 
             if (f < intList.Count)
             {
-                Console.WriteLine(intList);
+                Console.WriteLine(intList[f]);
             }
             else
             {
@@ -52,7 +52,7 @@ namespace ArraysAndListsAssignment1
 
             if (num < numArray.Length)
             {
-                Console.WriteLine(numArray);  
+                Console.WriteLine(numArray[num]);  
             }
             else
             {
@@ -74,7 +74,7 @@ namespace ArraysAndListsAssignment1
 
             if (c < intList2.Count)
             {
-                Console.WriteLine(intList2);
+                Console.WriteLine(intList2[c]);
             }
             else
             {
