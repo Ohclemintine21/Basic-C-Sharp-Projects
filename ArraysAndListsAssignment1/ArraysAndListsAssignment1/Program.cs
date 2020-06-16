@@ -1,17 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ArraysAndListsAssignment1
 {
     class Program
     {
-        public static object MessageBox { get; private set; }
+ 
 
-        static void Main(string[] args)
+        static void Main()
         {
             //User chooses an index from the array and then it displays the string at that index on the screen
             Console.WriteLine("Choose a food!");
@@ -32,9 +29,20 @@ namespace ArraysAndListsAssignment1
             numArray[3] = 40;
             numArray[4] = 50;
 
-
-            object error = MessageBox.Show("number does not exist. Try again");
             Console.WriteLine(numArray[0]);
+
+            //Error message display if number does not exist
+
+            try
+            {
+                int[] numArrays = { 6, 8, 35, 40, 50 };
+                Console.WriteLine(numArrays[10]);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
             Console.ReadLine();
 
             //Ask user to select an index of the list and then display the content at that index on the screen
