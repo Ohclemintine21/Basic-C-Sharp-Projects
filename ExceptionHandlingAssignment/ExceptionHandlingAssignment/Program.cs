@@ -20,7 +20,13 @@ class Program
 
             for (int i = 0; i < Numbers.Count; ++i)
                 Numbers[i] /= Convert.ToInt32(Console.ReadLine());
-
+            {
+                Console.WriteLine(Numbers);
+            }
+            foreach (var number in Numbers) 
+            {
+                Console.WriteLine(Numbers);
+            }
 
         }
         catch (FormatException ex)
