@@ -25,9 +25,9 @@ class Program
             }
             foreach (var number in Numbers) 
             {
-                Console.WriteLine(Numbers);
+                var result = numberOne / numberTwo;
             }
-
+            Console.WriteLine(numberThree);
         }
         catch (FormatException ex)
         {
