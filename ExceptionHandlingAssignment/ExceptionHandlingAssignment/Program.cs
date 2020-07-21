@@ -25,7 +25,7 @@ class Program
             }
             foreach (var number in Numbers) 
             {
-                var result = numberOne / numberTwo;
+                var result = numberThree;
             }
             Console.WriteLine(numberThree);
         }
