@@ -18,16 +18,17 @@ class Program
             Console.WriteLine(numberOne + " divided by " + numberTwo + " equals " + numberThree);
             Console.ReadLine();
 
+            int userInput = Convert.ToInt32(Console.ReadLine());
+
             for (int i = 0; i < Numbers.Count; ++i)
-                Numbers[i] /= Convert.ToInt32(Console.ReadLine());
             {
-                Console.WriteLine(Numbers);
+                Numbers[i] /= userInput;
             }
+
             foreach (var number in Numbers) 
             {
-                var result = numberThree;
+                Console.WriteLine(number);
             }
-            Console.WriteLine(numberThree);
         }
         catch (FormatException ex)
         {
