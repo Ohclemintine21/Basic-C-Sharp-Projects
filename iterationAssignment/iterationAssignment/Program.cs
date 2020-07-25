@@ -95,8 +95,6 @@ class Program
             Console.WriteLine("List of common pets: " +pet);
         }
         Console.ReadLine();
-
-
     }
 
 }
