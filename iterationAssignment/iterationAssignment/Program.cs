@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Text.RegularExpressions;
 
 class Program
 {
@@ -13,11 +14,11 @@ class Program
         Console.WriteLine("Enter your favorite book title:");
 
         //Create a loop that goes through each string in the array, adding user's text to string 
+        string UserInput = Console.ReadLine();
 
-        string[] answer = new string[1];
-        for (int i = 0; i < answer.Length; i++)
+        for (int i = 0; i < bookNames.Count; i++)
         {
-            answer[i] = Console.ReadLine();
+            Console.WriteLine(bookNames[i] +UserInput);    
         }
 
 
@@ -68,23 +69,21 @@ class Program
 
         //Create a list of strings where each tem is unique
         List<string> speciesWhales = new List<string>() { "Sperm", "Orca", "Beluga", "Blue", "Humpback" };
-        List<string> userInput = new List<string>();
+        
 
         //Ask user to input text to search for in the list
         Console.WriteLine("Select your favorite whale from the list: ");
+        string userInput = Console.ReadLine();
 
         //Create a loop that iterates through the loop and then displays the index of the array that contains matching text on the screen
-        foreach (string whale in speciesWhales)
+        for (int i = 0; i < speciesWhales.Count; i++)
         {
-            speciesWhales = userInput;
-
-            if (whale != null)
+            if (userInput == speciesWhales[i])
             {
-                Console.WriteLine("Sorry whale is not in the given list");
+                Console.WriteLine("Match found at index " + i);
             }
         }
-        Console.WriteLine(userInput.Count);
-        Console.ReadLine();
+        
 
         //list of strings that has two identical strings in list
         List<string> pets = new List<string>() { "dog", "dog", "cat", "bird", "fish" };
