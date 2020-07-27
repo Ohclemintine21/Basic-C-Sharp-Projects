@@ -8,7 +8,7 @@ class Program
     static void Main(string[] args)
     {
         // Create an array of strings
-        List<string> bookNames = new List<string>() { "Moby Dick", "The Little Prince", "Game of Thrones", "Dune", "Circe" };
+        string[] bookNames = { "Moby Dick", "The Little Prince", "Game of Thrones", "Dune", "Circe" };
 
         //Ask user for input text
         Console.WriteLine("Enter your favorite book title:");
@@ -16,9 +16,9 @@ class Program
         //Create a loop that goes through each string in the array, adding user's text to string 
         string UserInput = Console.ReadLine();
 
-        for (int i = 0; i < bookNames.Count; i++)
+        for (int i = 0; i < bookNames.Length; i++)
         {
-            Console.WriteLine(bookNames[i] +UserInput);    
+            Console.WriteLine(bookNames[i] + UserInput);
         }
 
 
@@ -40,31 +40,23 @@ class Program
 
         }
         //Create a loop where the comparison used to determine whether to continue iterrating the loop is a "<"
-        List<int> ReadingHours = new List<int>() { 2, 4, 6, 8, 10 };
-        List<int> passingTime = new List<int>();
+        int[] ReadHours = { 2, 4, 6, 8, 10 };
 
-        foreach (int hours in ReadingHours)
+
+        for (int i = 0; i < 10; i = i + 2)
         {
-            if(hours < 10)
-            {
-                passingTime.Add(hours);
-            }
+            Console.WriteLine(ReadHours[i]);
         }
-        Console.WriteLine(passingTime.Count);
         Console.ReadLine();
 
         //Create a loop where the comparison used to determine whether to continue iterating the loop is a "<=" operator.
-        List<int> numberBooks = new List<int>() { 4, 6, 8, 10 };
-        List<int> passingNumber = new List<int>();
-
-        foreach(int number in numberBooks)
+        int[] numberBooks = { 4, 6, 8, 10 };
+       
+        
+        for (int i = 0; i <= 10; i = i + 2)
         {
-            if (number <= 10)
-            {
-                passingNumber.Add(number);
-            }
+            Console.WriteLine(numberBooks[i]);
         }
-        Console.WriteLine(passingNumber.Count);
         Console.ReadLine();
 
         //Create a list of strings where each tem is unique
@@ -82,18 +74,50 @@ class Program
             {
                 Console.WriteLine("Match found at index " + i);
             }
+            //add code that tells user input is not in list
+            else
+            {
+                Console.WriteLine("Sorry, that input is not in the list of whales. ");
+            }
+            //stops loop from executing once match is found.
+            break;
         }
+        Console.ReadLine();
         
 
         //list of strings that has two identical strings in list
         List<string> pets = new List<string>() { "dog", "dog", "cat", "bird", "fish" };
 
-        //foreach loop that evaluates each item in list and displays all items
-        foreach (string pet in pets)
+        //Ask the user to select text to search for in the list
+        string UserInput2 = Console.ReadLine();
+        Console.WriteLine("Select a pet to search for in the list: " +UserInput2);
+
+        //for loop that evaluates each item in list and displays all items
+       for (int i = 0; i <pets.Count; i++)
+       {
+            if (UserInput2 == pets[i])
+            {
+                Console.WriteLine(pets.Count);
+            }
+            //add code to loop that tells user they put in text that isn't in list
+            else
+            {
+                Console.WriteLine("Sorry that input is not in the list. ");
+            }
+       }
+       Console.ReadLine();
+
+        //Create a list of strings with two identical strings in the list
+        List<string> Cars = new List<string>() { "Volvo", "Toyota", "Honda", "Ford", "Honda" };
+
+        //Create a foreach loop that evaluates each item in the list and displays a message showing the string & whether or not it has already appeared in the list
+        foreach (string car in Cars)
         {
-            Console.WriteLine("List of common pets: " +pet);
+            Console.WriteLine("This car has appeared in list already:" + car);
         }
         Console.ReadLine();
+        
+
     }
 
 }
