@@ -43,9 +43,9 @@ class Program
         int[] ReadHours = { 2, 4, 6, 8, 10 };
 
 
-        for (int i = 0; i < 10; i = i + 2)
+        for (int i = 0; i < ReadHours.Length; i++)
         {
-            Console.WriteLine(ReadHours[i]);
+            Console.WriteLine(ReadHours);
         }
         Console.ReadLine();
 
@@ -53,9 +53,9 @@ class Program
         int[] numberBooks = { 4, 6, 8, 10 };
        
         
-        for (int i = 0; i <= 10; i = i + 2)
+        for (int i = 0; i <= numberBooks.Length; i++)
         {
-            Console.WriteLine(numberBooks[i]);
+            Console.WriteLine(numberBooks);
         }
         Console.ReadLine();
 
@@ -72,12 +72,13 @@ class Program
         {
             if (userInput == speciesWhales[i])
             {
-                Console.WriteLine("Match found at index " + i);
+                Console.WriteLine("Match found at index " + speciesWhales);
             }
+
             //add code that tells user input is not in list
             else
             {
-                Console.WriteLine("Sorry, that input is not in the list of whales. ");
+                Console.WriteLine("Sorry, that input is not in the list of whales. "+userInput);
             }
             //stops loop from executing once match is found.
             break;
