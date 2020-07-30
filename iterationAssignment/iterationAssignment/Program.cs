@@ -73,14 +73,11 @@ class Program
             if (userInput == speciesWhales[i])
             {
                 Console.WriteLine("Match found at index " + i);
-                //stops loop from executing once match is found.
-                break;
             }
-
             //add code that tells user input is not in list
             else
             {
-                Console.WriteLine("Sorry, that input is not in the list of whales. "+userInput);
+                Console.WriteLine("Sorry, that input is not in the list of whales. ");
             }
            
         }
