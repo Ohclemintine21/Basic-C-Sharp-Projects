@@ -9,9 +9,10 @@ namespace Method3
     class MathMethod
     {
         //first method with two integers with last parameter optional
-        public int MathProblem(int num1, int num2, int num3 = 5)
+        public static MathProblem(int num1, int num2 = 5 )
         {
-            return num1 - num2 - num3;
+            Console.WriteLine(num1, num2 = 5);
+            
         }
 
     }
