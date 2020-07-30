@@ -10,30 +10,29 @@ namespace Method3
     {
         static void Main(string[] args)
         {
+            //Instaniate class
+            MathMethod mathMethod = new MathMethod();
+
             //pass first integer
             Console.WriteLine("Enter a number to subtract: ");
             int Input1 = Convert.ToInt32( Console.ReadLine());
             
 
-            //pass second int
+            //pass second int and convert to int
             string Input2 = (Console.ReadLine());
             if (Input2 == " ")
             {
-                Console.WriteLine(Input1);
+               mathMethod.MathProblem(Input1);
             }
             else
             {
-              string input2 = Convert.ToInt32(Console.ReadLine(Input1, Input2));
+                int input2 = Convert.ToInt32(Input2);
+                mathMethod.MathProblem(Input1, input2);
             }
             Console.ReadLine();
             
-            //Instaniate class
-            MathMethod mathMethod = new MathMethod();
 
-            //console results
-            int result = mathMethod.MathProblem(Input1, Input2);
-            Console.WriteLine("Result of MathProblem method is: " + result);
-            Console.ReadLine();
+         
 
         }
     }
