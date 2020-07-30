@@ -11,11 +11,11 @@ namespace Methods2
         static void Main(string[] args)
         {
             //pass first integer
-            Console.WriteLine("Enter a number to add: ");
+            Console.WriteLine("Enter a number to multiply: ");
             int Input1 = Convert.ToInt32(Console.ReadLine());
 
             //pass second integer
-            Console.WriteLine("Enter second number to add: ");
+            Console.WriteLine("Enter second number to multiply: ");
             int Input2 = Convert.ToInt32(Console.ReadLine());
 
             //instantiation
@@ -43,11 +43,11 @@ namespace Methods2
             Console.ReadLine();
 
             //pass first int
-            Console.WriteLine("Enter a number to multiply: ");
+            Console.WriteLine("Enter a number to add: ");
             int num5 = Convert.ToInt32(Console.ReadLine());
 
             //pass second int
-            Console.WriteLine("Enter second number to multiply: ");
+            Console.WriteLine("Enter second number to add: ");
             int num6 = Convert.ToInt32(Console.ReadLine());
 
             //instantiate int
