@@ -45,7 +45,7 @@ class Program
 
         for (int i = 0; i < ReadHours.Length; i++)
         {
-            Console.WriteLine(ReadHours);
+            Console.WriteLine(ReadHours[i]);
         }
         Console.ReadLine();
 
