@@ -56,11 +56,9 @@ namespace MathAndComparisonAssignment2
 
             //Compare Salaries Person 1 to Person 2
             Console.WriteLine("Does Person 1 make more money than Person 2?");
-
-
             AnnSalary1 = hoursWorked * hourlyRate * 52;
             AnnSalary2 = hoursWorked2 * hourlyRate2 * 52;
-            bool compareResult = (AnnSalary1 > AnnSalary2 );
+            bool compareResult = (AnnSalary1 > AnnSalary2);
             Console.WriteLine(compareResult);
             Console.ReadLine();
         }
