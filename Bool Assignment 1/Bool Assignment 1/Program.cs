@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Bool_Assignment_1
 {
@@ -38,7 +35,6 @@ namespace Bool_Assignment_1
             Console.WriteLine(numTickets);
             Console.ReadLine();
 
-             
             // find out if the user is qualified for insurance
             Console.WriteLine("Qualified?");
 
