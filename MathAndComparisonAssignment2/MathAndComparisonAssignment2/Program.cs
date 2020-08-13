@@ -44,20 +44,17 @@ namespace MathAndComparisonAssignment2
 
             //Annual Salary Person 1
             Console.WriteLine("Annual Salary of Person 1:");
-            int AnnSalary1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(AnnSalary1);
             Console.ReadLine();
 
             //Annual Salary Person 2
             Console.WriteLine("Annual Salary of Person 2:");
-            int AnnSalary2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(AnnSalary2);
+            Console.ReadLine();
             
 
             //Compare Salaries Person 1 to Person 2
             Console.WriteLine("Does Person 1 make more money than Person 2?");
-            AnnSalary1 = hoursWorked * hourlyRate * 52;
-            AnnSalary2 = hoursWorked2 * hourlyRate2 * 52;
+            int AnnSalary1 = hoursWorked * hourlyRate * 52;
+            int AnnSalary2 = hoursWorked2 * hourlyRate2 * 52;
             bool compareResult = (AnnSalary1 > AnnSalary2);
             Console.WriteLine(compareResult);
             Console.ReadLine();
