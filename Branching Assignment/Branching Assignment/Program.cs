@@ -50,16 +50,11 @@ namespace Branching_Assignment
             float quote = Dimensions / 100;
             Console.WriteLine(Dimensions);
             
-
             Console.WriteLine("Your estimated total for shipping this package is: ");
             Console.WriteLine(quote);
 
-
             Console.WriteLine("Thank you.");
             Console.ReadLine();
-
-
-
         }
     }
 }
