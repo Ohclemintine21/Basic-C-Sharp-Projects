@@ -12,7 +12,7 @@ namespace String_Assignment
         {
            
             //concatenate three strings
-            string name = "Hello,\"Stephanie\", how are you?!";
+            string name = "Hello, \"Stephanie\" , how are you?!";
 
             Console.WriteLine(name);
             Console.ReadLine();
@@ -26,11 +26,11 @@ namespace String_Assignment
 
             StringBuilder sb = new StringBuilder();
 
-            sb.Append("My name is Stephanie,");
+            sb.Append(" My name is Stephanie,");
 
-            sb.Append("\n I started a new chapter of my by learning to code at the Tech Academy.");
+            sb.Append("\n I started a new chapter of my life by learning to code at the Tech Academy.");
 
-            sb.Append("\n I intend to change my life and become an incredible coder and gain a great career.");
+            sb.Append("\n I intend to change my life, become an incredible coder, and gain a great career.");
 
             sb.Append("\n The belief in myself and the encouragement of others has carried me through this bootcamp.");
 
