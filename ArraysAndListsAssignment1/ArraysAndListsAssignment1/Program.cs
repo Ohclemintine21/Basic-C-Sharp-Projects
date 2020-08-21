@@ -6,8 +6,6 @@ namespace ArraysAndListsAssignment1
 {
     class Program
     {
- 
-
         static void Main()
         {
             //User chooses an index from the array and then it displays the string at that index on the screen
@@ -45,7 +43,6 @@ namespace ArraysAndListsAssignment1
             numArray[3] = 40;
             numArray[4] = 50;
 
-
             Console.WriteLine(numArray[num]);
 
             //Error message display if number does not exist
@@ -58,7 +55,6 @@ namespace ArraysAndListsAssignment1
             {
                 Console.WriteLine("Error, number not in list");
             }
-
 
             //Ask user to select an index of the list and then display the content at that index on the screen
             Console.WriteLine("Choose a Character.");
@@ -81,7 +77,6 @@ namespace ArraysAndListsAssignment1
                 Console.WriteLine("Error, character not in list");
             }
             Console.ReadLine();
-
         }
     }
 }
