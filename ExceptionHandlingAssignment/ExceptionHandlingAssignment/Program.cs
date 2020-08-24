@@ -8,7 +8,11 @@ class Program
     {
         try
         {
+            //List of integers
+            //ask user to divide each number in the list by
+            
             List<int> Numbers = new List<int>() {2, 6, 12, 24, 36};
+
             Console.WriteLine("Pick a number.");
             int numberOne = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Pick a second number.");
