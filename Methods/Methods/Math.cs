@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Methods
-{
+{ 
     class Math
     {
         //method 1 add two integers

@@ -15,7 +15,7 @@ namespace Methods
             Console.WriteLine("Please enter the first number to add: ");
             int UserInput1 = Convert.ToInt32(Console.ReadLine());
 
-            //ask for second number to pass 
+            //ask for second number to pass to the method 
             Console.WriteLine("Please enter a second number to add: ");
             int UserInput2 = Convert.ToInt32(Console.ReadLine());
 
