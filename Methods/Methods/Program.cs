@@ -48,8 +48,7 @@ namespace Methods
             int result3 = Math.FindMath3(UserInput3, UserInput4);
             Console.WriteLine("Result of multiply method is: " +result3);
             Console.ReadLine();
-        }
-        
+        }  
     }
 }
        
