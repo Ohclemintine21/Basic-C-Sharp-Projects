@@ -92,7 +92,6 @@ class Program
                 if (UserInput2 == pets[i])
                 {
                     Console.WriteLine(pets.Count);
-                    break;
                 }
                 //add code to loop that tells user they put in text that isn't in list
                 else

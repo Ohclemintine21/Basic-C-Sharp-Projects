@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Linq;
 
 namespace ArraysAndListsAssignment1
 {
@@ -47,7 +47,7 @@ namespace ArraysAndListsAssignment1
 
             //Error message display if number does not exist
 
-            if (num < numArray.Length)
+            if (num < numArray.Count())
             {
                 Console.WriteLine(numArray[num]);  
             }
