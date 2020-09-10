@@ -102,12 +102,19 @@ class Program
             Console.ReadLine();
 
             //Create a list of strings with two identical strings in the list
-            List<string> Cars = new List<string>() { "Volvo", "Toyota", "Honda", "Ford", "Honda" };
+            List<string> CarsList = new List<string>();
+
+            //elements to string
+            CarsList.Add("Volvo");
+            CarsList.Add("Toyota");
+            CarsList.Add("Honda");
+            CarsList.Add("Ford");
+            CarsList.Add("Honda");
 
             //Create a foreach loop that evaluates each item in the list and displays a message showing the string & whether or not it has already appeared in the list
-            foreach (string car in Cars)
+            foreach (string car in CarsList)
             {
-                Console.WriteLine("This car has appeared in list already:" + car);
+                Console.WriteLine(CarsList.Contains("This car has appeared in list already: " +car));
             }
             Console.ReadLine();
         }

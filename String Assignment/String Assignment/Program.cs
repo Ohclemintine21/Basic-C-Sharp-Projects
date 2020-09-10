@@ -17,6 +17,7 @@ namespace String_Assignment
             Console.WriteLine(name);
             Console.ReadLine();
 
+            //concatenate string to Uppercase
             string animal = "The dog grew up quickly!";
 
             string UcaseAnimal = animal.ToUpper();
@@ -24,6 +25,7 @@ namespace String_Assignment
             Console.WriteLine($"{UcaseAnimal}");
             Console.ReadLine();
 
+            //Use a Stringbuilder and builds a paragraph of text, one sentence at a time.
             StringBuilder sb = new StringBuilder();
 
             sb.Append(" My name is Stephanie,");
