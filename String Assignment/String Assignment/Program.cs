@@ -12,7 +12,7 @@ namespace String_Assignment
         {
            
             //concatenate three strings
-            string name = "Hello, \"Stephanie\" , how are you?!";
+            string name = "Hello " + "Stephanie " +  "how are you?! ";
 
             Console.WriteLine(name);
             Console.ReadLine();
