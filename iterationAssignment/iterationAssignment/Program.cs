@@ -114,7 +114,7 @@ class Program
             //Create a foreach loop that evaluates each item in the list and displays a message showing the string & whether or not it has already appeared in the list
             foreach (string car in CarsList)
             {
-                Console.WriteLine(CarsList.Contains("This car has appeared in list already: " +car));
+               Console.WriteLine(CarsList.Contains("This car has appeared in list already: " +car));
             }
             Console.ReadLine();
         }
