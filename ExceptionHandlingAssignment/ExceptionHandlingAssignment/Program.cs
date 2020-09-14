@@ -9,26 +9,21 @@ class Program
         try
         {
             //List of integers
-            List<int> Numbers = new List<int>() {2, 6, 12, 24, 36};
+            List<int> Numbers = new List<int>() { 2, 6, 12, 24, 36 };
 
             //ask user to divide each number in the list by
             Console.WriteLine("Pick a number.");
             int numberOne = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Pick a second number.");
-            int numberTwo = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Dividing the two...");
-            int numberThree = numberOne / numberTwo;
-            Console.WriteLine(numberOne + " divided by " + numberTwo + " equals " + numberThree);
-            Console.ReadLine();
 
-            int userInput = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Dividing the two...");
 
             for (int i = 0; i < Numbers.Count; ++i)
             {
-                Numbers[i] /= userInput;
+                Numbers[i] /= numberOne;
             }
+            Console.ReadLine();
 
-            foreach (var number in Numbers) 
+            foreach (var number in Numbers)
             {
                 Console.WriteLine(number);
             }
