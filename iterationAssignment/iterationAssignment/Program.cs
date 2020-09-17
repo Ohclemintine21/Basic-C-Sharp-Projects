@@ -68,9 +68,9 @@ class Program
         //Create a loop that iterates through the loop and then displays the index of the array that contains matching text on the screen
         foreach (string whale in speciesWhales)
         {
-            if (userInput == whale )
+            if (userInput == whale)
             {
-                Console.WriteLine("Match found at index " +userInput.Length);
+                Console.WriteLine("Match found at index " + userInput.Length);
                 break;
             }
             //add code that tells user input is not in list
@@ -84,9 +84,9 @@ class Program
 
             //Ask the user to select text to search for in the list
             string UserInput2 = Console.ReadLine();
-            Console.WriteLine("Select a pet to search for in the list: " + UserInput2);
+            Console.WriteLine("Select a pet to search for in the list: " + UserInput2 );
 
-            //for loop that evaluates each item in list and displays all items
+            //for loop that evaluates each item in the list and displays all items 
             for (int i = 0; i < pets.Count; i++)
             {
                 if (UserInput2 == pets[i])
@@ -98,27 +98,24 @@ class Program
                 {
                     Console.WriteLine("Sorry that input is not in the list. ");
                 }
-            }
+             }
             Console.ReadLine();
 
             //Create a list of strings with two identical strings in the list
-            List<string> CarsList = new List<string>() { "Volvo ", "Toyota ", "Honda ", "Ford", "Honda " };
+            List<string> CarsList = new List<string>() { "Volvo", "Toyota", "Honda", "Ford", "Honda" };
             List<string> Duplicate = new List<string>();
-            
-            
 
             //Create a foreach loop that evaluates each item in the list and displays a message showing the string & whether or not it has already appeared in the list
-            foreach (string car in CarsList)
-            {
-                if (car == "Honda")
-                {
-                    Duplicate.Add(car);
-                    Console.WriteLine("This car already exists in the list  " + CarsList);
-                }
+            foreach (string car in CarsList) { 
+                string duplicate = Duplicate.Contains(car) ? "duplicate" : "not duplicate";
+                Duplicate.Add(car);
+                Console.WriteLine(car + " " + duplicate);
             }
             Console.ReadLine();
         }
     }
 }
+
+
     
 
