@@ -78,27 +78,28 @@ class Program
             {
                 Console.WriteLine("Sorry, that input is not in the list of whales. ");
             }
+        }
 
             //list of strings that has two identical strings in list
             List<string> pets = new List<string>() { "dog", "dog", "cat", "bird", "fish" };
 
             //Ask the user to select text to search for in the list
+            Console.WriteLine("Select pet to search for in list:" );
             string UserInput2 = Console.ReadLine();
-            Console.WriteLine("Select a pet to search for in the list: " + UserInput2 );
 
-            //for loop that evaluates each item in the list and displays all items 
-            for (int i = 0; i < pets.Count; i++)
+        //for loop that evaluates each item in the list and displays all items 
+        for (int i = 0; i < pets.Count; i++)
             {
                 if (UserInput2 == pets[i])
                 {
-                    Console.WriteLine(pets.Count);
+                    Console.WriteLine(i);
                 }
                 //add code to loop that tells user they put in text that isn't in list
                 else
                 {
                     Console.WriteLine("Sorry that input is not in the list. ");
                 }
-             }
+            }
             Console.ReadLine();
 
             //Create a list of strings with two identical strings in the list
@@ -106,7 +107,7 @@ class Program
             List<string> Duplicate = new List<string>();
 
             //Create a foreach loop that evaluates each item in the list and displays a message showing the string & whether or not it has already appeared in the list
-            foreach (string car in CarsList) { 
+            foreach (string car in CarsList) {
                 string duplicate = Duplicate.Contains(car) ? "duplicate" : "not duplicate";
                 Duplicate.Add(car);
                 Console.WriteLine(car + " " + duplicate);
@@ -114,7 +115,7 @@ class Program
             Console.ReadLine();
         }
     }
-}
+
 
 
     
