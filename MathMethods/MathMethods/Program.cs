@@ -15,7 +15,7 @@ namespace MathMethods
             int result = mathOne.MathOp(3);
             Console.WriteLine(result);
 
-            //instantiate second method
+            //instantiate second method 
             decimal decimalValue = 6.2M;
             decimal result2 = mathOne.MathOp(decimalValue);
             Console.WriteLine(result2);
@@ -24,7 +24,6 @@ namespace MathMethods
             int result3 = mathOne.MathOp("3");
             Console.WriteLine(result3);
             Console.ReadLine();
-
         }
     }
 }

@@ -22,8 +22,6 @@ namespace MathMethods
         public int MathOp(string val)
         {
             return Int32.Parse(val) * 10;
-        }
-
-       
+        } 
     }
 }
