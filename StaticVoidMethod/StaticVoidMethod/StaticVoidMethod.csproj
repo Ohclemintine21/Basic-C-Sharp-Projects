@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{59BDDF59-90A4-4375-AA90-BEB93B12A203}</ProjectGuid>
+    <ProjectGuid>{08D18882-B588-4309-B5D7-9E4E7C485BED}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TwoParameters</RootNamespace>
-    <AssemblyName>TwoParameters</AssemblyName>
+    <RootNamespace>StaticVoidMethod</RootNamespace>
+    <AssemblyName>StaticVoidMethod</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="VoidMethod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
