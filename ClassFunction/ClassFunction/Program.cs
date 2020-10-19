@@ -6,16 +6,14 @@ using System.Threading.Tasks;
 
 namespace ClassFunction
 {
-    public class Employee : Person
+    class Program
     {
-        int id;
-
-        public int Id
+        static void Main(string[] args)
         {
-            get { return id;  }
-            set { id = value;  }
-        }
-
-      
+            Person myPerson = new Person();
+            myPerson.SayName();
+            Console.WriteLine("Name: " + myPerson.firstName  + myPerson.lastName);
+            Console.ReadLine();
+        }    
     }
 }
