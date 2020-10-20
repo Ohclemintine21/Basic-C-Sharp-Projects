@@ -8,7 +8,9 @@ namespace AbstractClass
 {
     public class Employee : Person
     {
-        public string fullName = "Sample Student";
-        
+        public new void SayName()
+        {
+            Console.WriteLine("Name: " + firstName + lastName);
+        }  
     }
 }
