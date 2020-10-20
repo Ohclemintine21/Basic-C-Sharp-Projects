@@ -4,13 +4,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace AbstractClass
 {
-    public class Employee : Person
+    class Employee : Person2, IQuittable
     {
-        public new void SayName()
+        public override void SayName()
         {
             Console.WriteLine("Name: " + firstName + lastName);
         }  
+        public void Quit()
+        {
+            Console.WriteLine(firstName + " " + lastName + " has quit! ");
+            Console.ReadLine();
+        }
+    }
+
+    internal interface IQuittable
+    {
+    }
+
+    class Person
+    {
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
     }
 }

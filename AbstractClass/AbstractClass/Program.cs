@@ -15,8 +15,22 @@ namespace AbstractClass
             person.SayName();
             Console.ReadLine();
 
+            Employee myQuit = new Employee();
+            myQuit.Quit();
+        }
+        static void Main1(string[] args)
+        {
+            Person myObj = new Person();
+            Person myObj2 = new Person();
+            myObj.Name = "Employee1";
+            myObj2.Name = "Employee1";
+            Console.WriteLine(myObj.Name == myObj2.Name);
+            Console.ReadLine();
+        }
 
-
+        private interface IQuittable
+        {
+            void Quit();
         }
     }
 }
