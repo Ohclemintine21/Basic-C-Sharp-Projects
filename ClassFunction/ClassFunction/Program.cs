@@ -12,8 +12,12 @@ namespace ClassFunction
         {
             Person myPerson = new Person();
             myPerson.SayName();
-            Console.WriteLine("Name: " + myPerson.firstName  + myPerson.lastName);
             Console.ReadLine();
-        }    
+        }
+
+        //give it two string properties
+        public string firstName = "Sample";
+        public string lastName = "Student";
+
     }
 }
