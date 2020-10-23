@@ -15,7 +15,6 @@ namespace ClassFunction
         public void SayName()
         {
            Console.WriteLine("Name: " +  myPerson.firstName + myPerson.lastName);
-        }
-        
+        }    
     }
 }

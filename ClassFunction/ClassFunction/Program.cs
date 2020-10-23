@@ -18,6 +18,5 @@ namespace ClassFunction
         //give it two string properties
         public string firstName = "Sample";
         public string lastName = "Student";
-
     }
 }
