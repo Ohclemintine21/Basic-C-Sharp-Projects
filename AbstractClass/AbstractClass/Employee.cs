@@ -19,9 +19,9 @@ namespace AbstractClass
             Console.ReadLine();
         }
     }
-
     internal interface IQuittable
     {
+        void Quit();
     }
 
     class Person

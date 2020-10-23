@@ -10,13 +10,16 @@ namespace AbstractClass
     {
         static void Main(string[] args)
         {
-           
             Employee person = new Employee();
             person.SayName();
             Console.ReadLine();
 
-            Employee myQuit = new Employee();
+            IQuittable myQuit = new Employee();
             myQuit.Quit();
+        }
+        internal interface IQuittable
+        {
+            void Quit();
         }
         static void Main1(string[] args)
         {
@@ -27,10 +30,6 @@ namespace AbstractClass
             Console.WriteLine(myObj.Name == myObj2.Name);
             Console.ReadLine();
         }
-
-        private interface IQuittable
-        {
-            void Quit();
-        }
+        
     }
 }
