@@ -17,29 +17,32 @@ namespace Exception_handling
                 {
                     //ask user for their age
                     Console.WriteLine("How old are you?");
-                    int userAge;
-                    userAge = Convert.ToInt32(Console.ReadLine());
+                    int userAge = Convert.ToInt32(Console.ReadLine());
+
                     //display year user was born
-                    var date01 = DateTime.Now.Year;
-                    var userYear = (date01 - userAge);
+                    DateTime thisYear = DateTime.Now;
+                    DateTime birthYear = thisYear.AddYears(-userAge);
 
-                    
 
-                    if (userAge == 0)
-                        throw new System.wrongNumber();
-                    if (userAge < 0)
-                        throw new System.wrongNumber();
-                    Console.WriteLine("You were born in: " + userYear);
+                    if (userAge <= 0)
+                    {
+                        throw (new Exception());
+                    }
+                    if (userAge < 100)
+                    {
+                        throw (new Exception());
+                    }
+                    Console.WriteLine("You were born in: " + birthYear);
                     Console.ReadLine();
                 }
                 //Exceptions using try/catch
-                catch (wrongNumber)
+                catch (FormatException)
                 {
                     //general exception 
-                    Console.WriteLine("Please enter actual age.");
-                    Console.ReadLine();
+                    Console.WriteLine("Error occurred. Please enter actual age.");
+                    Console.ReadKey();
                 }
-                catch (Exception)
+                catch 
                 {
                     //display error message if the user enters zero or negative numbers
                     Console.WriteLine("Please enter a real number no zeros and no negatives. ");
@@ -48,17 +51,16 @@ namespace Exception_handling
                 finally
                 {
                     Console.WriteLine("How old are you?");
-                    int userAge;
-                    userAge = Convert.ToInt32(Console.ReadLine());
+                    int userAge = Convert.ToInt32(Console.ReadLine());
 
                     var date01 = DateTime.Now.Year;
                     var userYear = (date01 - userAge);
 
                     if (userAge == 0)
-                        throw new System.wrongNumber();
+                        throw (new Exception());
 
                     if (userAge < 0)
-                        throw new System.wrongNumber();
+                        throw (new Exception());
 
                     //Console.WriteLine(userYear);
 
