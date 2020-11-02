@@ -8,7 +8,7 @@ namespace ClassFunction
 {
     public class Employee : Person
     {
-        public string fullName = "Sample Student";
+        public int ID { get; set;}
     }
 }
 

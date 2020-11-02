@@ -9,12 +9,14 @@ namespace ClassFunction
     //create a class called Person
     public class Person
     {
+        public string firstName { get; set; }
+        public string lastName { get; set; }
 
         //give class with void method SayName with no parameters and simply writes persons full name to console
 
         public void SayName()
         {
-           Console.WriteLine("Name: " +  myPerson.firstName + myPerson.lastName);
+           Console.WriteLine("Name: " +  firstName + lastName);
         }    
     }
 }

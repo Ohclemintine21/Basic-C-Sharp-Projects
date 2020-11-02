@@ -10,13 +10,10 @@ namespace ClassFunction
     {
         static void Main(string[] args)
         {
-            Person myPerson = new Person();
-            myPerson.SayName();
+           Employee employee = new Employee() { firstName = "Sample", lastName = "Student"};
+            employee.SayName();
             Console.ReadLine();
         }
 
-        //give it two string properties
-        public string firstName = "Sample";
-        public string lastName = "Student";
     }
 }
