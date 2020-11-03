@@ -28,7 +28,7 @@ namespace Exception_handling
                     {
                         throw (new Exception());
                     }
-                    if (userAge < 100)
+                    if (userAge > 100)
                     {
                         throw (new Exception());
                     }
@@ -36,17 +36,18 @@ namespace Exception_handling
                     Console.ReadLine();
                 }
                 //Exceptions using try/catch
+               
                 catch (FormatException)
-                {
-                    //general exception 
-                    Console.WriteLine("Error occurred. Please enter actual age.");
-                    Console.ReadKey();
-                }
-                catch 
                 {
                     //display error message if the user enters zero or negative numbers
                     Console.WriteLine("Please enter a real number no zeros and no negatives. ");
                     Console.ReadLine();
+                }
+                catch (Exception)
+                {
+                    //general exception 
+                    Console.WriteLine("Error occurred. Please enter actual age.");
+                    Console.ReadKey();
                 }
                 finally
                 {
