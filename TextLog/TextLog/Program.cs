@@ -12,13 +12,16 @@ namespace TextLog
         static void Main(string[] args)
         {
             //ask user for a number
-            string userInput = Convert.ToString(Console.ReadLine());
             Console.WriteLine("Please enter a number. ");
-            using(StreamWriter file = new StreamWriter(@"C:\Users\ohcle\Documents\Visual Studio 2019\txtFile\log.txt", true))
+            string userInput = Convert.ToString(Console.ReadLine());
+
+            using (StreamWriter file = new StreamWriter(@"C:\Users\Student\\source\\Logs\\log.txt", true))
             {
-                file.WriteLine(userInput);
-                Console.WriteLine(@"C: \Users\ohcle\Documents\Visual Studio 2019\txtFile\log.txt");
-            }
+                file.Write(userInput);
+
+            }   
+            Console.WriteLine(File.ReadAllText(@"C:\Users\Student\\source\\Logs\\log.txt"));
+            
             Console.ReadLine();
         }
     }
