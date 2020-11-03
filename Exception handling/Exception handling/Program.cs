@@ -49,25 +49,7 @@ namespace Exception_handling
                     Console.WriteLine("Error occurred. Please enter actual age.");
                     Console.ReadKey();
                 }
-                finally
-                {
-                    Console.WriteLine("How old are you?");
-                    int userAge = Convert.ToInt32(Console.ReadLine());
-
-                    var date01 = DateTime.Now.Year;
-                    var userYear = (date01 - userAge);
-
-                    if (userAge == 0)
-                        throw (new Exception());
-
-                    if (userAge < 0)
-                        throw (new Exception());
-
-                    //Console.WriteLine(userYear);
-
-                    Console.WriteLine("You were born in: " + userYear);
-                    Console.ReadLine();
-                }
+                Console.ReadLine();
             }
         }
     }
