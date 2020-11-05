@@ -13,7 +13,6 @@ namespace CarInsurance.Controllers
     public class InsureeController : Controller
     {
         private InsuranceEntities db = new InsuranceEntities();
-        private int total;
 
         // GET: Insuree
         public ActionResult Index()
@@ -97,7 +96,6 @@ namespace CarInsurance.Controllers
                 {
                     y = y;
                 }
-
                 if (insuree.CarMake == "Porshe")
                 {
                     y += x;
