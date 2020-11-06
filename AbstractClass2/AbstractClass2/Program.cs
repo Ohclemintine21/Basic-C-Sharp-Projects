@@ -13,7 +13,6 @@ namespace AbstractClass2
             Employee employee = new Employee();
             employee.FirstName = "Sample";
             employee.LastName = "Student";
-
             Console.WriteLine("Name: " + employee.FirstName + " " + employee.LastName);
             Console.ReadLine();
         }
