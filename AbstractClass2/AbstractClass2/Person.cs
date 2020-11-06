@@ -6,9 +6,21 @@ using System.Threading.Tasks;
 
 namespace AbstractClass2
 {
-    class Person
-    {
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-    }
+        public class Person
+        {
+
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+
+            public void SayName(string FirstName, string LastName)
+            {
+                FirstName = "B";
+                LastName = "M";
+
+                Console.WriteLine("Name: " + FirstName + " " + LastName);
+                Console.ReadLine();
+            }
+
+        }
 }
+

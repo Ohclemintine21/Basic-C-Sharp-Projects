@@ -8,14 +8,13 @@ namespace AbstractClass2
 {
     class Program
     {
-        static void Main(string[] args, object myObj)
+        static void Main(string[] args)
         {
-            Employee person = new Employee();
-            person.firstName = "Sample";
-            person.lastName = "Student";
-            person.SayName();
+            Employee employee = new Employee();
+            employee.FirstName = "Sample";
+            employee.LastName = "Student";
 
-            Console.WriteLine("Name: " + person.firstName + "" + person.lastName);
+            Console.WriteLine("Name: " + employee.FirstName + " " + employee.LastName);
             Console.ReadLine();
         }
     }

@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace AbstractClass2
 {
-    class Employee : Person
+    public class Employee : Person
     {
-        public new void SayName()
-        {
-            Console.WriteLine("Name: " + firstName + lastName);
-        }
+        public int ID { get; set; }
     }
 }
