@@ -10,10 +10,13 @@ namespace AbstractClass2
     {
         static void Main(string[] args)
         {
+            //instantiate an Employee Object
             Employee employee = new Employee();
-            employee.FirstName = "Sample";
-            employee.LastName = "Student";
-            Console.WriteLine("Name: " + employee.FirstName + " " + employee.LastName);
+            employee.firstName = "Sample";
+            employee.lastName = "Student";
+
+            // call the SayName() method on the object
+            employee.SayName();
             Console.ReadLine();
         }
     }

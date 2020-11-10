@@ -9,6 +9,10 @@ namespace AbstractClass2
 {
     public class Employee : Person
     {
-        public int ID { get; set; }
+        //implement the SayName() method inside employee class
+        public override void SayName()
+        {
+            Console.WriteLine($"Name: {firstName} {lastName}");
+        }
     }
 }         

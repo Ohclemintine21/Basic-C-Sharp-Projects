@@ -6,21 +6,13 @@ using System.Threading.Tasks;
 
 namespace AbstractClass2
 {
-        public abstract class Person
-        {
-
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-
-            public void SayName(string FirstName, string LastName)
-            {
-                FirstName = "B";
-                LastName = "M";
-
-                Console.WriteLine("Name: " + FirstName + " " + LastName);
-                Console.ReadLine();
-            }
-
-        }
+    public abstract class Person
+    {
+       //create abstract class called person w/ two properties string firstName and string lastName
+       public string firstName { get; set; }
+       public string lastName { get; set; }
+       // method SayName()
+       public abstract void SayName();
+    }
 }
 
