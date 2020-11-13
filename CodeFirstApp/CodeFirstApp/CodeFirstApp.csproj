@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="wwwroot\AppStart\BundleConfig.cs" />
+    <Compile Include="wwwroot\AppStart\FilterConfig.cs" />
+    <Compile Include="wwwroot\AppStart\RouteConfig.cs" />
+  </ItemGroup>
+
+
+
+</Project>
