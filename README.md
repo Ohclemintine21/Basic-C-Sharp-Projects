@@ -17,7 +17,7 @@ C# Projects
  MVC web application that takes the student user's input for login information and adds a new student to the Database.
  
  
- -Code First App
+ - Code First App
  
  https://github.com/Ohclemintine21/HTML-and-CSS-Projects/tree/master/portfolio
  
